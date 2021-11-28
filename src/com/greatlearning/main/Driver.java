@@ -20,37 +20,33 @@ public class Driver {
 		System.out.println(" 3. Human Resource");
 		System.out.println(" 4. Legal");
 		int dept = in.nextInt();
-		Employee emp = null;
+		Employee emp;
 		//Switch case and create an object  the firstName, lastName and department
         switch(dept)
         {
             case 1: 
            {
         	    emp = new Employee(firstName,lastName,"tech");
-
+        	    break;
            }
-            break;
            case 2: 
             {
             	emp = new Employee(firstName,lastName,"admin");
-;
+            	break;
             }
-             break;
            case 3: 
            {
            		emp = new Employee(firstName,lastName,"hr");
-
+           		break;
            }
-            break;
            case 4: 
            {
         	   emp = new Employee(firstName,lastName,"legal");
-
+        	   break;
            }
-            break;
            default:
            System.out.println("Please enter only the numbers listed above");
-           break;
+           return;
         }
          
            // call methods from CredentialService class
